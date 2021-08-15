@@ -80,6 +80,12 @@ a:hover {
   margin-top: 16px;
   border-radius: 5px;
 }
+
+.content-picture img {
+  height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+}
 .title1 {
   display: flex;
   justify-content: space-between;
@@ -109,6 +115,7 @@ a:hover {
   text-align: center;
   border-radius: 5px;
   transition: 0.3s;
+  margin-top: 16px;
 }
 
 .block:hover {
