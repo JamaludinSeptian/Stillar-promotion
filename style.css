@@ -74,17 +74,24 @@ a:hover {
 .bg-content h2 {
   font-size: 18px;
 }
-.content {
+.content,
+.content-promo {
   border: 1px solid rgba(153, 153, 153, 0.404);
   padding: 16px;
   margin-top: 16px;
   border-radius: 5px;
 }
-
-.content-picture img {
+.content-promo {
+  border: none;
+}
+.content-picture img,
+.banner-promo img {
   height: 50vh;
   width: 100%;
   border-radius: 10px;
+}
+.banner-promo img {
+  height: 150px;
 }
 .title1 {
   display: flex;
@@ -125,6 +132,20 @@ a:hover {
 
 button {
   font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background: #1667c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer p {
+  color: #ffffff;
+  font-size: 0.955em;
 }
 
 /* LOGIN FORM */
@@ -177,7 +198,7 @@ input[type="submit"]:hover {
   }
   ul {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: #2c3e50;
     top: 80px;
