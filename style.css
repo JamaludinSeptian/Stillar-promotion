@@ -41,10 +41,11 @@ nav ul li a {
   text-transform: uppercase;
 }
 a.active,
-a:hover {
+.btn-primary:hover {
   background: #1b9bff;
   transition: 0.5s;
 }
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -134,7 +135,7 @@ a:hover {
 button {
   font-weight: bold;
 }
-
+/* FOOTER */
 footer {
   width: 100%;
   height: 70px;
@@ -153,12 +154,13 @@ footer p {
 .containers {
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 .heading h1 {
   font-weight: 650;
 }
+
 .heading span {
   font-weight: 500;
   color: rgb(46, 46, 46);
@@ -169,7 +171,8 @@ footer p {
   flex-direction: column;
 }
 .inp,
-button {
+button,
+.btn-login-active {
   margin: 10px 0;
   padding: 10px;
   border-radius: 20px;
@@ -180,15 +183,46 @@ button {
 .inp::placeholder {
   color: gray;
 }
+
 .btn-secondary {
   background-color: #0072ff;
   color: #fff;
   cursor: pointer;
   transition: 0.18s all;
+  outline: none;
 }
 .btn-secondary:hover {
   background-color: #0061db;
 }
+
+.btn-login-active:hover {
+  background-color: #24bd06;
+}
+.btn-login-active {
+  background-color: #42b72a;
+}
+hr {
+  margin: 10px 0;
+}
+.btn-login-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-login {
+  color: #0061db;
+}
+.btn-login-active {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.btn-login:hover {
+  color: #054594;
+  transition: 0.3s;
+}
+
 /* CREATE ACCOUNT FORM */
 input[class="login"],
 select,
