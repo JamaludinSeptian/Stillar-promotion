@@ -59,7 +59,8 @@ a:hover {
 }
 
 /* Content */
-.container {
+.container,
+.containers {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -149,7 +150,47 @@ footer p {
 }
 
 /* LOGIN FORM */
-input[type="text"],
+.containers {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.heading h1 {
+  font-weight: 650;
+}
+.heading span {
+  font-weight: 500;
+  color: rgb(46, 46, 46);
+}
+.inputs {
+  margin: 34px 0;
+  display: flex;
+  flex-direction: column;
+}
+.inp,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(119, 136, 153, 0.911);
+  width: 250px;
+  outline: none;
+}
+.inp::placeholder {
+  color: gray;
+}
+.btn-secondary {
+  background-color: #0072ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.18s all;
+}
+.btn-secondary:hover {
+  background-color: #0061db;
+}
+/* CREATE ACCOUNT FORM */
+input[class="login"],
 select,
 textarea {
   width: 100%;
